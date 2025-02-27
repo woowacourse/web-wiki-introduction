@@ -63,10 +63,24 @@ article > p {
   text-indent: 8px;
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
 section,
 article {
   display: flex;
   flex-flow: column;
+  margin-bottom: 40px;
 }
 
 div.thumbnail {
@@ -98,14 +112,14 @@ aside h2 {
 }
 
 .profile-image {
-  background-image: url("https://images.unsplash.com/photo-1618979251882-0b40ef3617f0?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: 100%;
-  background-position: center 100%;
+  background-image: url("/images/my-profile.jpg");
+  background-size: cover;
+  background-position: center;
   width: var(--aside-width);
   height: var(--aside-width);
-
   text-indent: -1000rem;
 }
+
 
 aside.right-sidebar nav {
   padding: var(--right-sidebar-padding);
